@@ -1,0 +1,18 @@
+# Dependencies
+node_modules/
+dist/
+build/
+
+# Local Environment / Secrets
+.env
+.env.local
+.env.production
+*.env
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/

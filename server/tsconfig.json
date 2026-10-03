@@ -1,0 +1,61 @@
+// {
+//   // Visit https://aka.ms/tsconfig to read more about this file
+//   "compilerOptions": {
+//     // File Layout
+//     // "rootDir": "./src",
+//     // "outDir": "./dist",
+
+//     // Environment Settings
+//     // See also https://aka.ms/tsconfig/module
+//     "module": "nodenext",
+//     "target": "esnext",
+//     "types": [],
+//     // For nodejs:
+//     // "lib": ["esnext"],
+//     // "types": ["node"],
+//     // and npm install -D @types/node
+
+//     // Other Outputs
+//     "sourceMap": true,
+//     "declaration": true,
+//     "declarationMap": true,
+
+//     // Stricter Typechecking Options
+//     "noUncheckedIndexedAccess": true,
+//     "exactOptionalPropertyTypes": true,
+
+//     // Style Options
+//     // "noImplicitReturns": true,
+//     // "noImplicitOverride": true,
+//     // "noUnusedLocals": true,
+//     // "noUnusedParameters": true,
+//     // "noFallthroughCasesInSwitch": true,
+//     // "noPropertyAccessFromIndexSignature": true,
+
+//     // Recommended Options
+//     "strict": true,
+//     "jsx": "react-jsx",
+//     "verbatimModuleSyntax": true,
+//     "isolatedModules": true,
+//     "noUncheckedSideEffectImports": true,
+//     "moduleDetection": "force",
+//     "skipLibCheck": true,
+//   }
+// }
+
+
+{
+  "compilerOptions": {
+    "target": "ES2022",                  /* Outputs modern JavaScript compatible with modern Node.js versions */
+    "module": "NodeNext",                /* Enables modern ES Modules (import/export) natively in Node */
+    "moduleResolution": "NodeNext",      /* Forces Node-style resolution for dependencies */
+    "rootDir": "./src",                  /* Tells TypeScript your raw source code is inside the 'src' folder */
+    "outDir": "./dist",                  /* Tells TypeScript to dump the compiled JavaScript into a 'dist' folder */
+    "esModuleInterop": true,             /* Fixes import bugs with older CommonJS packages */
+    "forceConsistentCasingInFileNames": true, /* Prevents bugs when developing on Mac/Windows and deploying to Linux */
+    "strict": true,                      /* Maximises type safety (catches bugs early) */
+    "skipLibCheck": true                 /* Speeds up builds by ignoring type checks inside node_modules */
+  },
+  "include": ["src/**/*"],               /* Explicitly includes all files in src */
+  "exclude": ["node_modules", "dist"]    /* Excludes dependency and build folders */
+}
