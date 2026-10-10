@@ -9,7 +9,7 @@ const validateSchema = (schema : ZodSchema) => (req : Request, res : Response, n
     if(!result.success) {
         const errMsg = result.error.issues.map( err => err.message).join(",");
 
-        throw new ApiError(422, errMsg);
+         return next(new ApiError(422, errMsg));
     }
 
     next();
