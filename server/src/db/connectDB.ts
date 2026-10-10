@@ -1,9 +1,10 @@
 import { Pool } from "pg";
 import {drizzle} from "drizzle-orm/node-postgres";
-import "dotenv/config";
+// import "dotenv/config";
+import { ENV } from "../config/env.config.js";
 
 
-const connectionString = process.env.DATABASE_URL;
+const connectionString = ENV.DATABASE_URL;
 
 if(!connectionString) throw new Error("❌ DB Connection String is Missing");
 
